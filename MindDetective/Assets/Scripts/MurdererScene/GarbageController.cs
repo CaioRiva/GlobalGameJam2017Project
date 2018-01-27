@@ -8,6 +8,7 @@ public class GarbageController : GenericSpriteController
     {
         SetGameObjectForSpriteRenderer(this.gameObject);
         SetAudioForSpriteRenderer(GetComponent<AudioSource>() as AudioSource);
+        SetIsPerson(false);
     }
 
     protected void Update()

@@ -8,10 +8,11 @@ public class VictimController : GenericSpriteController
     {
         SetGameObjectForSpriteRenderer(this.gameObject);
         SetAudioForSpriteRenderer(GetComponent<AudioSource>() as AudioSource);
+        SetIsPerson(false);
     }
 
     protected void Update()
     {
-
+       
     }
 }

@@ -9,6 +9,7 @@ public class PoliceOfficerController : GenericSpriteController
     {
         SetGameObjectForSpriteRenderer(this.gameObject);
         SetAudioForSpriteRenderer(GetComponent<AudioSource>() as AudioSource);
+        SetIsPerson(true);
     }
 	
 	protected void Update()
