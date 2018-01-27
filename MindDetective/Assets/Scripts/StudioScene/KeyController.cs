@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GarbageController : GenericSpriteController
+public class KeyController : GenericSpriteController
 {
     protected void Start()
     {
@@ -15,3 +15,4 @@ public class GarbageController : GenericSpriteController
 
     }
 }
+

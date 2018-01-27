@@ -6,12 +6,17 @@ public class GenericSpriteController : MonoBehaviour
 {
     [SerializeField]
     private Sprite[] sprites = new Sprite[2];
-    private GameObject gameObject;
+    [SerializeField]
+    private AudioClip clickAudio;
+
+    private AudioSource audio;
+    private GameObject baseGameObject;
 
     protected void OnMouseEnter()
     {
         Debug.Log("Entrou");
         gameObject.GetComponent<SpriteRenderer>().sprite = sprites[1];
+        audio.PlayOneShot(clickAudio);
     }
 
     protected void OnMouseExit()
@@ -22,7 +27,12 @@ public class GenericSpriteController : MonoBehaviour
 
     protected void SetGameObjectForSpriteRenderer(GameObject gameObject)
     {
-        this.gameObject = gameObject;
+        baseGameObject = gameObject;
              
+    }
+
+    protected void SetAudioForSpriteRenderer(AudioSource audio)
+    {
+        this.audio = audio;
     }
 }

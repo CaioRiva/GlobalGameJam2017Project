@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GarbageController : GenericSpriteController
+public class AgentController : GenericSpriteController
 {
     protected void Start()
     {

@@ -7,6 +7,7 @@ public class VictimController : GenericSpriteController
     protected void Start()
     {
         SetGameObjectForSpriteRenderer(this.gameObject);
+        SetAudioForSpriteRenderer(GetComponent<AudioSource>() as AudioSource);
     }
 
     protected void Update()
